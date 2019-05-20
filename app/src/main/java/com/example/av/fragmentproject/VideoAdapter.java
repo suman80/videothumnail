@@ -22,6 +22,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
     List<YouTubeVideos> youtubeVideoList;
 
     public VideoAdapter() {
+
     }
 
     public VideoAdapter(List<YouTubeVideos> youtubeVideoList) {
@@ -34,7 +35,6 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
         View view = LayoutInflater.from( parent.getContext()).inflate(R.layout.video_view, parent, false);
 
         return new VideoViewHolder(view);
-
     }
 
     @Override
